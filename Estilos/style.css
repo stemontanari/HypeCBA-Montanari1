@@ -41,10 +41,25 @@
     color: black;
     padding: 10px;
     display: block;
+    font-size: 1.2rem;
 }
 .menu li {
     display: inline-block;
     text-align: center;
+    position: relative;
+}
+.menu ul li:before{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: rgb(236, 0, 0);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    transition: 0.3s ease-out;
+}
+.menu ul li:hover::before{
+    width: 100%;
 }
 /*cierre titulo + nav*/
 
@@ -120,6 +135,13 @@
 .botonConocenos{
     background-color: black;
     color: white;
+    position: relative;
+    cursor: pointer;
+    transition:0.5s ;
+}
+.botonConocenos:hover{
+    color: red;
+    
 }
 /*cierre boton conocenos*/
 .enviar{
@@ -209,6 +231,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     margin-top: 5px;
+    cursor: pointer;
 }
 
 .footer li a{    
