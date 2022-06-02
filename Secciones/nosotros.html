@@ -4,59 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../Estilos/style.css">
     <title>Nosotros</title>
 </head>
     <body id="cuerpo">
-        <div>
+        <div> <!-- inicio cartel envio -->
             <h4 class="envio">Envios a todo el pais. Pagá con el método de pago que prefieras.</h4>
-        </div> 
-    <header> <!-- inicio fila deL titulo + nav --> 
-        <div id="header">
-            <div class="menu">
-                <nav>
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="../Secciones/productos.html">Productos</a></li>
-                        <li><a href="../Secciones/nosotros.html">Nosotros</a></li>
-                        <li><a href="../Secciones/contacto.html">Contacto</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div id="tituloPrincipal">
-                <h1>HypeCBA</h1>
-            </div>
-        </div>
-    </header> <!-- cierre fila deL titulo + nav --> 
+        </div> <!-- cierre cartel envio -->
 
-    <section class="imagen-titulo"><!--inicio fotos principal-->	
+        <header> <!-- inicio fila deL titulo + nav --> 
+            <div id="header" >
+                <div class="menu">
+                    <nav class="navbar navbar-expand-lg bg-#EEEEEE">
+                        <div class="container-fluid">
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="navbar-nav">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="../Secciones/nosotros.html">Nosotros</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="../Secciones/contacto.html">Contacto</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Productos
+                                </a>
+                                <ul class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+                                  <li><a class="dropdown-item" href="../Secciones/producto1.html">Air Jordan</a></li>
+                                  <li><a class="dropdown-item" href="../Secciones/producto2.html">Swoosh Jacket</a></li>
+                                  <li><a class="dropdown-item" href="../Secciones/producto3.html">Supreme Skateboard</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div id="tituloPrincipal">
+                    <h1>HypeCBA</h1>
+                </div>
+            </div>
+        </header> <!-- cierre fila deL titulo + nav --> 
+
+    <section class="imagen-titulo"> <!--inicio fotos principal-->	
         <div class="imagen1">
             <img src="../img/fotoNosotros.jpg" class="imagenPrincipal1">
         </div>
         <div class="titulo1">
             <p class="weare">WE ARE HypeCBA </p>
         </div>
-    </section><!-- cierrefotos principal-->
+    </section> <!-- cierrefotos principal-->
 
-   <div>
-       <section> <!--quienes somos-->
+   <div> <!-- inicio quienes somos-->
+       <section> 
            <article>
                 <h2 class="titulosSecundarios">Quienes somos?</h2>
                 <p class="textos">Somos el primer local hype de la Argentina, con más de 10 años coleccionando. Como amantes de la cultura proveemos la sabiduría para traerles los mejores productos 100% originales.</p>
            </article>
        </section>
-   </div>
+   </div> <!-- cierre quienes somos-->
    
-    <div>
+    <div> <!--inicio showroom-->
        <section>
            <article><!--showroom-->
                 <h2 class="titulosSecundarios">Showroom</h2>
                 <p class="textos">Podes venir a probarte nuestros productos sin compromiso, de Lunes a Sabado de 11:00 a 21:00hs!</p>
            </article>
        </section>
-    </div>
+    </div> <!--cierre showroom-->
 
-    <div>
+    <div> <!--inicio ubicacion local-->
         <section>
             <article><!--ubicacion-->
                 <h2 class="titulosSecundarios">Donde encontrarnos?</h2>
@@ -66,9 +91,11 @@
                 </div>
             </article>
         </section>
-    </div>
+    </div><!--cierre ubicacion local-->
+
     <br>
     <br>
+
     <footer > <!-- inicio footer -->
         <div>
             <ul class="footer">
@@ -90,5 +117,8 @@
             </ul>
         </div>
     </footer><!-- cierre footer -->
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
