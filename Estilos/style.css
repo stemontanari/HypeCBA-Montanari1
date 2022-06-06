@@ -291,10 +291,6 @@
 
 @media (min-width:0px) and (max-width: 460px) {
     
-    #tituloPrincipal{
-       display: none;
-    }
-
     .imagenPrincipal1{
         max-height: fit-content;
         max-width: fit-content;
@@ -320,6 +316,9 @@
         display: none;
     }
 
+    .botonConocenos{
+        display: none;
+    }
     .productos-div{
         display: grid;
         grid-template-columns: auto;
@@ -332,6 +331,10 @@
     .imagenesProd{
         width: 300px;
         height: 250px;
+    }
+
+    .textoNosotros{
+        display: none;
     }
 
     .titulosSecundarios{
