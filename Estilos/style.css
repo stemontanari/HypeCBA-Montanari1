@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /*cartel de envio gratis*/
@@ -203,15 +204,6 @@
 }
 /*cierre imagenes showroom*/
 
-/*inicio texto showroom*/
-.textoNosotros{
-    font-family: 'Fjalla One', sans-serif;
-    font-size: x-large;
-    text-align: center;
-    font-weight: 20px;
-}
-/*cierre texto showroom*/
-
 /*inicio imagenes productos*/
 .imagenProductos{
   width: 500px;
@@ -292,8 +284,8 @@
 @media (min-width:0px) and (max-width: 460px) {
     
     .imagenPrincipal1{
-        max-height: fit-content;
-        max-width: fit-content;
+        max-height: 450px;
+        max-width: 100%;
     }
 
     .imagen-titulo{
@@ -331,10 +323,6 @@
     .imagenesProd{
         width: 300px;
         height: 250px;
-    }
-
-    .textoNosotros{
-        display: none;
     }
 
     .titulosSecundarios{
