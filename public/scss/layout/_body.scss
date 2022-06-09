@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cuerpo{
+    background-color: $bg;
+}
+        
+.envio{
+    display: flex;
+    justify-content: center;
+    background-color: $bg2;
+    color: $bg;
+    padding: 8px;
+    font-size: medium;
+}

@@ -1,0 +1,31 @@
+.footer{
+    list-style: none;
+    color: $negro;
+    border-top-style: groove;
+    border-color: $negro;    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 5px auto;
+    cursor: pointer;
+    background-color: $bg;
+    -webkit-transition: color 1s linear;
+    transition: color 2s linear;
+    li{
+        display: flex;
+        align-items: center;
+        a{
+            text-decoration: none;
+            color: $negro;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            &:hover{
+                color: $rojo;
+            }
+        }
+    }
+}
+.org-footer{
+    display: flex;
+    justify-content: center;
+}

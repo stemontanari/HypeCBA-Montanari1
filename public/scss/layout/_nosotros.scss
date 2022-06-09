@@ -1,0 +1,26 @@
+.divShowroom{
+    display: flex;
+    justify-content: center;
+}
+.div3imagenes{
+   display: inline-block;
+   position: relative;
+   margin: 0px 10px 20px 10px;
+   padding: 0;
+   border: $negro 2px solid;
+   border-radius: 10px;
+}
+.imagenesShowroom{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    &:hover{
+        filter: opacity(.5);
+    }
+}
+.mapaubicacion{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
