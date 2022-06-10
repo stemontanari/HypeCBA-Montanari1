@@ -29,3 +29,11 @@
     display: flex;
     justify-content: center;
 }
+
+@media (min-width:0px) and (max-width: 460px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

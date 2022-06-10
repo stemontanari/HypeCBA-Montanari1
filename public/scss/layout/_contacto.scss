@@ -8,3 +8,16 @@
         border-radius: 10px;
         margin-left: 20px;
 }
+
+@media (min-width:0px) and (max-width: 460px) {
+
+    .formulario-imagen{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .contactanos{
+        margin-left: 80px;
+        margin-right: 60px;
+    }
+}
