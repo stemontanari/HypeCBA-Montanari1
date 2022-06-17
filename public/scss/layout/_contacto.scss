@@ -3,10 +3,9 @@
     grid-template-columns:40% 60%;
 }
 .imagenformu{
-        width: 90%;
-        height: 600px;
-        border-radius: 10px;
-        margin-left: 20px;
+    @include sizes(90%, 600px);
+    border-radius: 10px;
+    margin-left: 20px;
 }
 
 @media (min-width:0px) and (max-width: 460px) {

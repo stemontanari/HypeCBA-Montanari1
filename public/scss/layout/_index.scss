@@ -3,19 +3,17 @@
     grid-template-columns: 50% 50%;
 }
 .imagenPrincipal1{
+    @include sizes(99%, 590px);
     margin-left: 5px;
     margin-right: 5px;
-    width: 99%;
-    height: 590px;
     image-resolution: 1080;
     border-radius: 5px;
 }
 .titulo1{
+    @include flex-center;
+    @include sizes(99%, 590px);
     border-left: solid $negro 3px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    height: 590px;
     .weare{
         font-size: 80px;
         font-family: 'Bebas Neue', cursive;
@@ -62,19 +60,18 @@
         max-width: 100%;
     }
     .titulo1{
+        @include flex-center;
         border: none;
-        display: flex;
         align-items: center;
-        justify-content: center;
         height: auto;
         color: $bg;
         background-color: $negro;
     }
     .weare{
-        display: none;
+        @include none;
     }
     .botonConocenos{
-        display: none;
+        @include none;
     }
     .titulosSecundarios{
         margin-left: auto;

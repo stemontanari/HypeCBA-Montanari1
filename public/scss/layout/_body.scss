@@ -9,8 +9,7 @@
 }
         
 .envio{
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     background-color: $bg2;
     color: $bg;
     padding: 8px;

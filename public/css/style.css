@@ -55,19 +55,20 @@ header {
   grid-template-columns: 50% 50%; }
 
 .imagenPrincipal1 {
+  height: 590px;
+  width: 99%;
   margin-left: 5px;
   margin-right: 5px;
-  width: 99%;
-  height: 590px;
   image-resolution: 1080;
   border-radius: 5px; }
 
 .titulo1 {
-  border-left: solid black 3px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height: 590px; }
+  height: 590px;
+  width: 99%;
+  border-left: solid black 3px;
+  align-items: center; }
   .titulo1 .weare {
     font-size: 80px;
     font-family: 'Bebas Neue', cursive; }
@@ -108,10 +109,10 @@ header {
     max-height: 450px;
     max-width: 100%; }
   .titulo1 {
-    border: none;
     display: flex;
-    align-items: center;
     justify-content: center;
+    border: none;
+    align-items: center;
     height: auto;
     color: #EEEEEE;
     background-color: black; }
@@ -136,8 +137,8 @@ header {
   border-radius: 10px; }
 
 .imagenesShowroom {
-  width: 300px;
   height: 300px;
+  width: 300px;
   border-radius: 10px; }
   .imagenesShowroom:hover {
     filter: opacity(0.5); }
@@ -157,8 +158,8 @@ header {
   grid-template-columns: 40% 60%; }
 
 .imagenformu {
-  width: 90%;
   height: 600px;
+  width: 90%;
   border-radius: 10px;
   margin-left: 20px; }
 
@@ -176,8 +177,8 @@ header {
   margin-top: 30px; }
 
 .imagenProductos {
-  width: 500px;
   height: 500px;
+  width: 500px;
   border-radius: 5PX;
   margin-left: 30px;
   border: black 1px solid; }
@@ -190,8 +191,8 @@ header {
   font-weight: bolder; }
 
 .botones {
-  width: 40px;
   height: 40px;
+  width: 40px;
   font-size: 15px;
   margin-right: 10px; }
 
@@ -204,11 +205,12 @@ header {
 @media (min-width: 0px) and (max-width: 460px) {
   .estiloProductos {
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center; }
   .imagenProductos {
-    width: 300px;
     height: 300px;
+    width: 300px;
     border: solid black 2px;
     margin: 5px; }
   .detallesproductos {
@@ -235,8 +237,15 @@ header {
       display: flex;
       justify-content: center;
       margin-top: 10px; }
-      .footer li a:hover {
-        color: #d61f1f; }
+
+.Facebook:hover {
+  color: blue; }
+
+.Instagram:hover {
+  color: #e9c317; }
+
+.Contacto:hover {
+  color: #d61f1f; }
 
 .org-footer {
   display: flex;
@@ -245,5 +254,5 @@ header {
 @media (min-width: 0px) and (max-width: 460px) {
   .footer {
     display: flex;
-    flex-direction: column;
-    justify-content: center; } }
+    justify-content: center;
+    flex-direction: column; } }

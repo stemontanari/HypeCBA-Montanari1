@@ -19,21 +19,33 @@
             display: flex;
             justify-content: center;
             margin-top: 10px;
-            &:hover{
-                color: $rojo;
-            }
+                
         }
     }
 }
+
+.Facebook{
+    &:hover{
+        color: map-get($color,primary)
+    }
+}
+.Instagram{
+    &:hover{
+        color: map-get($color,secondary)
+    }
+}
+.Contacto{
+    &:hover{
+        color: map-get($color,tertiary)
+    }
+}
 .org-footer{
-    display: flex;
-    justify-content: center;
+    @include flex-center;
 }
 
 @media (min-width:0px) and (max-width: 460px) {
     .footer{
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        justify-content: center;
     }
 }
