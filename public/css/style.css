@@ -9,10 +9,13 @@
 .envio {
   display: flex;
   justify-content: center;
+  text-align: center;
+  height: 40px auto;
   background-color: rgba(22, 21, 21, 0.849);
   color: #EEEEEE;
   padding: 8px;
-  font-size: medium; }
+  font-size: medium;
+  font-weight: bold; }
 
 header {
   display: grid;
@@ -74,31 +77,17 @@ header {
     font-family: 'Bebas Neue', cursive; }
 
 .titulosSecundarios {
-  font-family: 'Tai Heritage Pro', serif;
-  font-size: xx-large;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 40px;
   text-align: center;
   line-height: 1.5; }
 
 .textos {
+  display: flex;
+  justify-content: center;
   text-align: center;
   font-family: 'Tai Heritage Pro', serif;
   font-size: larger; }
-
-.botonConocenos {
-  padding: 15px 25px;
-  margin: 0px;
-  font-size: 16px;
-  border: 2px solid black;
-  color: black;
-  cursor: pointer;
-  background: linear-gradient(to right, #d61f1f 50%, transparent 50%);
-  background-size: 200%;
-  background-position: right;
-  transition: background-position 0.5s; }
-  .botonConocenos:hover {
-    background-position: left;
-    color: black;
-    font-weight: 700; }
 
 @media (min-width: 0px) and (max-width: 460px) {
   .imagen-titulo {
@@ -124,44 +113,94 @@ header {
     margin-left: auto;
     margin-right: auto; } }
 
-.divShowroom {
+.somoshype {
+  height: 500px;
+  margin: 20px auto; }
+
+.somoshype_contenedor {
+  display: grid;
+  grid-template-columns: 35% 65%; }
+
+.somoshype_imagen {
+  height: 450px;
+  width: 450px;
+  margin-left: 50px;
+  margin-top: 50px;
+  border-radius: 10px;
+  overflow: hidden; }
+  .somoshype_imagen:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 0.4s; }
+
+.somoshype_texto {
+  padding-top: 200px;
+  margin-left: 10px; }
+
+.somoshype_titulo {
+  display: flex;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: bold; }
+
+.somoshype_parrafo {
+  margin-top: 5px auto;
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center; }
+
+.somoshype_contenedor2 {
+  display: grid;
+  grid-template-columns: 65% 35%; }
+
+.somoshype_contenedor3 {
   display: flex;
   justify-content: center; }
 
-.div3imagenes {
-  display: inline-block;
-  position: relative;
-  margin: 0px 10px 20px 10px;
-  padding: 0;
-  border: black 2px solid;
-  border-radius: 10px; }
+.div_imagen {
+  display: flex;
+  justify-content: center;
+  margin: 25px; }
 
-.imagenesShowroom {
-  height: 300px;
-  width: 300px;
+.somoshype_imagen2 {
+  height: 450px;
+  width: 450px;
   border-radius: 10px; }
-  .imagenesShowroom:hover {
-    filter: opacity(0.5); }
+  .somoshype_imagen2:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 0.4s; }
 
 .mapaubicacion {
   display: flex;
   justify-content: center;
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 @media (min-width: 0px) and (max-width: 460px) {
-  .divShowroom {
-    display: none; } }
+  .somoshype_contenedor {
+    display: flex; }
+  .somoshype_imagen {
+    height: 400px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 20px; }
+  .somoshype_texto {
+    padding-top: 0px;
+    margin-left: 0px; }
+  .somoshype_titulo {
+    font-size: 1.6rem;
+    font-weight: bold; } }
 
 .formulario-imagen {
   display: grid;
   grid-template-columns: 40% 60%; }
 
 .imagenformu {
-  height: 600px;
+  height: 640px;
   width: 90%;
   border-radius: 10px;
-  margin-left: 20px; }
+  margin-left: 20px;
+  margin-top: 25px; }
 
 @media (min-width: 0px) and (max-width: 460px) {
   .formulario-imagen {
@@ -169,7 +208,13 @@ header {
     grid-template-columns: 100%; }
   .contactanos {
     margin-left: 80px;
-    margin-right: 60px; } }
+    margin-right: 60px; }
+  .imagenformu {
+    height: 500px;
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 25px; } }
 
 .estiloProductos {
   display: grid;
@@ -217,42 +262,46 @@ header {
     margin-left: 20px; } }
 
 .footer {
+  height: 150px;
   list-style: none;
-  color: black;
-  border-top-style: groove;
+  color: #EEEEEE;
   border-color: black;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 5px auto;
+  margin: 0px auto;
   cursor: pointer;
-  background-color: #EEEEEE;
-  -webkit-transition: color 1s linear;
-  transition: color 2s linear; }
-  .footer li {
-    display: flex;
-    align-items: center; }
-    .footer li a {
-      text-decoration: none;
-      color: black;
-      display: flex;
-      justify-content: center;
-      margin-top: 10px; }
+  background-color: rgba(22, 21, 21, 0.849);
+  text-align: center; }
 
-.Facebook:hover {
-  color: blue; }
-
-.Instagram:hover {
-  color: #e9c317; }
-
-.Contacto:hover {
-  color: #d61f1f; }
-
-.org-footer {
+.titulo_footer {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: bold; }
+
+.texto_footer {
+  display: flex;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin: 30px auto; }
+
+.iconos {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px auto; }
+  .iconos i {
+    font-size: 24px;
+    align-self: center; }
 
 @media (min-width: 0px) and (max-width: 460px) {
   .footer {
     display: flex;
     justify-content: center;
-    flex-direction: column; } }
+    height: 150px; }
+  .texto_footer {
+    display: flex;
+    justify-content: center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0px auto;
+    text-align: center; } }

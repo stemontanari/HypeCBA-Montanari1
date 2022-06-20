@@ -1,30 +1,81 @@
-.divShowroom{
+.somoshype{
+    height: 500px;
+    margin: 20px auto;
+}
+.somoshype_contenedor{
+    display: grid;
+    grid-template-columns: 35% 65%;
+}
+.somoshype_imagen{
+    @include sizes(450px, 450px);
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+    &:hover{
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); 
+        transition-duration: 0.4s;
+    }
+    
+}
+.somoshype_texto{
+   padding-top: 200px;
+   margin-left: 10px;
+}
+.somoshype_titulo{
+    @include flex-center;
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.somoshype_parrafo{
+    margin-top: 5px auto;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.somoshype_contenedor2{
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.somoshype_contenedor3{
     @include flex-center;
 }
-.div3imagenes{
-   display: inline-block;
-   position: relative;
-   margin: 0px 10px 20px 10px;
-   padding: 0;
-   border: $negro 2px solid;
-   border-radius: 10px;
+.div_imagen{
+    @include flex-center;
+    margin: 25px;
 }
-.imagenesShowroom{
-    @include sizes(300px, 300px);
+.somoshype_imagen2{
+    @include sizes(450px, 450px);
     border-radius: 10px;
     &:hover{
-        filter: opacity(.5);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1); 
+        transition-duration: 0.4s;
     }
 }
 .mapaubicacion{
     @include flex-center;
     padding: 0;
-    margin: 0;
 }
 
 @media (min-width:0px) and (max-width: 460px) {
-
-    .divShowroom{
-        @include none;
+    .somoshype_contenedor{
+        display: flex;
     }
+    .somoshype_imagen{
+        @include sizes(400px, 400px);
+        border-radius: 10px;
+        margin: 20px;
+    }
+    .somoshype_texto{
+
+        padding-top: 0px;
+        margin-left: 0px;
+     }
+     .somoshype_titulo{
+         font-size: 1.6rem;
+         font-weight: bold;
+     }
 }    

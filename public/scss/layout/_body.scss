@@ -10,8 +10,11 @@
         
 .envio{
     @include flex-center;
+    text-align: center;
+    height: 40px auto;
     background-color: $bg2;
     color: $bg;
     padding: 8px;
     font-size: medium;
+    font-weight: bold;
 }

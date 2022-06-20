@@ -1,51 +1,44 @@
 .footer{
+    height: 150px;
     list-style: none;
-    color: $negro;
-    border-top-style: groove;
+    color: $bg;
     border-color: $negro;    
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    margin: 5px auto;
+    margin: 0px auto;
     cursor: pointer;
-    background-color: $bg;
-    -webkit-transition: color 1s linear;
-    transition: color 2s linear;
-    li{
-        display: flex;
-        align-items: center;
-        a{
-            text-decoration: none;
-            color: $negro;
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-                
-        }
-    }
+    background-color: $bg2;
+    text-align: center;
 }
 
-.Facebook{
-    &:hover{
-        color: map-get($color,primary)
-    }
-}
-.Instagram{
-    &:hover{
-        color: map-get($color,secondary)
-    }
-}
-.Contacto{
-    &:hover{
-        color: map-get($color,tertiary)
-    }
-}
-.org-footer{
+.titulo_footer{
     @include flex-center;
+    font-size: 1.4rem;
+    font-weight: bold;
 }
-
+.texto_footer{
+    @include flex-center;
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 30px auto;
+}
+.iconos{
+    @include flex-center;
+    gap: 10px;
+    margin: 30px auto;
+    i{
+        font-size: 24px;
+        align-self: center;
+    }
+}
 @media (min-width:0px) and (max-width: 460px) {
     .footer{
         @include flex-center;
-        flex-direction: column;
+        height: 150px;
+    }
+    .texto_footer{
+        @include flex-center;
+        font-size: 0.9rem;
+        font-weight: bold;
+        margin: 0px auto;
+        text-align: center;
     }
 }

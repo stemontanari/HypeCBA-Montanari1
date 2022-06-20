@@ -3,9 +3,10 @@
     grid-template-columns:40% 60%;
 }
 .imagenformu{
-    @include sizes(90%, 600px);
+    @include sizes(90%, 640px);
     border-radius: 10px;
     margin-left: 20px;
+    margin-top: 25px;
 }
 
 @media (min-width:0px) and (max-width: 460px) {
@@ -18,5 +19,11 @@
     .contactanos{
         margin-left: 80px;
         margin-right: 60px;
+    }
+    .imagenformu{
+        @include sizes(90%, 500px);
+        border-radius: 10px;
+        margin-left: 20px;
+        margin-top: 25px;
     }
 }
