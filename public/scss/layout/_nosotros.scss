@@ -1,15 +1,16 @@
 .somoshype{
-    height: 500px;
-    margin: 20px auto;
+    width:100%;
+    margin: 0 auto;
 }
 .somoshype_contenedor{
-    display: grid;
-    grid-template-columns: 35% 65%;
+    @include flex-center;
+    flex-direction: row;
+    align-items: center;
+    max-width: 970px;
+    margin: 0 auto;
 }
 .somoshype_imagen{
-    @include sizes(450px, 450px);
-    margin-left: 50px;
-    margin-top: 50px;
+    @include sizes(350px, 350px);
     border-radius: 10px;
     overflow: hidden;
     &:hover{
@@ -17,16 +18,28 @@
         transform: scale(1.1); 
         transition-duration: 0.4s;
     }
-    
 }
 .somoshype_texto{
-   padding-top: 200px;
-   margin-left: 10px;
+   width: 100%;
+   font-size: 16px !important;
+   @include flex-center;
+   flex-direction: column;
+   align-items: center;
+   font-family: 'Tai Heritage Pro', serif;
+    h2{
+        font-size: 2rem
+    }
+    p{
+        font-size: 1.2rem;
+        text-align: center;
+        width: 80%;
+    }
 }
 .somoshype_titulo{
     @include flex-center;
-    font-size: 2.2rem;
+    font-size: 2rem;
     font-weight: bold;
+    font-family: 'Tai Heritage Pro', serif;
 }
 .somoshype_parrafo{
     margin-top: 5px auto;
@@ -47,8 +60,9 @@
     margin: 25px;
 }
 .somoshype_imagen2{
-    @include sizes(450px, 450px);
+    @include sizes(350px, 350px);
     border-radius: 10px;
+    overflow: hidden;
     &:hover{
         -webkit-transform: scale(1.1);
         transform: scale(1.1); 
@@ -60,10 +74,25 @@
     padding: 0;
 }
 
-@media (min-width:0px) and (max-width: 460px) {
+@media (min-width:0px) and (max-width: 768px) {
     .somoshype_contenedor{
-        display: flex;
+        @include flex-center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem
     }
+    .somoshype_contenedor2{
+        @include flex-center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3rem
+    }
+
+    .somoshype {
+        height: 500px;
+        margin: 75px auto;
+      }
+
     .somoshype_imagen{
         @include sizes(400px, 400px);
         border-radius: 10px;
@@ -78,4 +107,4 @@
          font-size: 1.6rem;
          font-weight: bold;
      }
-}    
+}
