@@ -107,8 +107,6 @@ header {
     background-color: black; }
   .weare {
     display: none; }
-  .botonConocenos {
-    display: none; }
   .titulosSecundarios {
     margin-left: auto;
     margin-right: auto; } }
@@ -171,27 +169,20 @@ header {
   display: flex;
   justify-content: center; }
 
-.div_imagen {
-  display: flex;
-  justify-content: center;
-  margin: 25px; }
-
-.somoshype_imagen2 {
-  height: 350px;
-  width: 350px;
-  border-radius: 10px;
-  overflow: hidden; }
-  .somoshype_imagen2:hover {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    transition-duration: 0.4s; }
-
 .mapaubicacion {
   display: flex;
   justify-content: center;
   padding: 0; }
 
+.div_imagen {
+  display: flex;
+  justify-content: center;
+  margin: 25px; }
+
 @media (min-width: 0px) and (max-width: 768px) {
+  .somoshype {
+    height: 500px;
+    margin: 75px auto; }
   .somoshype_contenedor {
     display: flex;
     justify-content: center;
@@ -204,9 +195,6 @@ header {
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem; }
-  .somoshype {
-    height: 500px;
-    margin: 75px auto; }
   .somoshype_imagen {
     height: 400px;
     width: 400px;

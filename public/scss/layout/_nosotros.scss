@@ -55,26 +55,21 @@
 .somoshype_contenedor3{
     @include flex-center;
 }
-.div_imagen{
-    @include flex-center;
-    margin: 25px;
-}
-.somoshype_imagen2{
-    @include sizes(350px, 350px);
-    border-radius: 10px;
-    overflow: hidden;
-    &:hover{
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1); 
-        transition-duration: 0.4s;
-    }
-}
 .mapaubicacion{
     @include flex-center;
     padding: 0;
 }
+.div_imagen{
+    @include flex-center;
+    margin: 25px;
+}
 
 @media (min-width:0px) and (max-width: 768px) {
+    
+    .somoshype {
+        height: 500px;
+        margin: 75px auto;
+    }
     .somoshype_contenedor{
         @include flex-center;
         flex-direction: column;
@@ -87,12 +82,6 @@
         align-items: center;
         margin-bottom: 3rem
     }
-
-    .somoshype {
-        height: 500px;
-        margin: 75px auto;
-      }
-
     .somoshype_imagen{
         @include sizes(400px, 400px);
         border-radius: 10px;
@@ -102,9 +91,9 @@
 
         padding-top: 0px;
         margin-left: 0px;
-     }
+    }
      .somoshype_titulo{
          font-size: 1.6rem;
          font-weight: bold;
-     }
+    }
 }
