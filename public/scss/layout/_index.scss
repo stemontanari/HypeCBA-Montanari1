@@ -20,16 +20,18 @@
     }
 }
 .titulosSecundarios{
-    font-family: 'Bebas Neue', cursive;
-    font-size: 40px;
+    font-family: 'Tai Heritage Pro', serif;
+    font-size: 2rem;
     text-align: center;
     line-height: 1.5;
+    font-weight: bold;
 }
 .textos{
     @include flex-center;
     text-align: center;
     font-family: 'Tai Heritage Pro', serif;
-    font-size: larger;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 @media (min-width:0px) and (max-width: 768px) {
