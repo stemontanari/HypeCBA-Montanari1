@@ -20,7 +20,7 @@
     }
 }
 .titulosSecundarios{
-    font-family: 'Tai Heritage Pro', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     text-align: center;
     line-height: 1.5;
@@ -29,7 +29,7 @@
 .textos{
     @include flex-center;
     text-align: center;
-    font-family: 'Tai Heritage Pro', serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.1rem;
     font-weight: bold;
 }
