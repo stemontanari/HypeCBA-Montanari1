@@ -95,6 +95,11 @@ header {
   font-size: 1.1rem;
   font-weight: bold; }
 
+#carouselExampleFade {
+  width: 350px;
+  height: 350px;
+  margin: 0px; }
+
 @media (min-width: 0px) and (max-width: 768px) {
   .imagen-titulo {
     display: grid;
