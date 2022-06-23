@@ -1,13 +1,13 @@
 .somoshype{
     width:100%;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 .somoshype_contenedor{
     @include flex-center;
     flex-direction: row;
     align-items: center;
     max-width: 970px;
-    margin: 0 auto;
+    margin: 0px auto;
 }
 .somoshype_imagen{
     @include sizes(350px, 350px);
@@ -20,12 +20,12 @@
     }
 }
 .somoshype_texto{
-   width: 100%;
-   font-size: 16px !important;
-   @include flex-center;
-   flex-direction: column;
-   align-items: center;
-   font-family: 'Raleway', sans-serif;
+    @include flex-center;
+    width: 100%;
+    font-size: 16px !important;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
     h2{
         font-size: 2rem
     }
@@ -35,6 +35,22 @@
         width: 80%;
     }
 }
+.somoshype_texto2{
+    @include flex-center;
+    width: 100%;
+    font-size: 16px !important;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+     h2{
+         font-size: 2rem
+     }
+     p{
+         font-size: 1.2rem;
+         text-align: center;
+         width: 80%;
+     }
+ }
 .somoshype_titulo{
     @include flex-center;
     font-size: 2rem;
@@ -52,45 +68,84 @@
     display: grid;
     grid-template-columns: 65% 35%;
 }
-.somoshype_contenedor3{
-    @include flex-center;
-}
 .mapaubicacion{
     @include flex-center;
     padding: 0;
 }
 .div_imagen{
     @include flex-center;
-    margin: 25px;
 }
 
+@media (min-width:0px) and (max-width: 768px){
+    .somoshype_texto{
+        @include flex-center;
+        width: 100%;
+        font-size: 16px !important;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+        h2{
+            font-size: 1.8rem
+        }
+        p{
+            font-size: 1.0rem;
+            text-align: center;
+            width: 80%;
+        }
+    }
+    .somoshype_texto2{
+        @include flex-center;
+        width: 100%;
+        font-size: 16px !important;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Raleway', sans-serif;
+         h2{
+             font-size: 1.8rem
+         }
+         p{
+             font-size: 1.0rem;
+             text-align: center;
+             width: 80%;
+         }
+     }
+}
 @media (min-width:0px) and (max-width: 768px) {
     
     .somoshype {
         height: 500px;
-        margin: 75px auto;
+        margin: 20px auto;
+    }
+    .somoshype2 {
+        height: 580px;
+        margin: 20px auto;
     }
     .somoshype_contenedor{
         @include flex-center;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 3rem
     }
     .somoshype_contenedor2{
         @include flex-center;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 3rem
     }
     .somoshype_imagen{
-        @include sizes(400px, 400px);
+        @include sizes(350px, 350px);
         border-radius: 10px;
-        margin: 20px;
+        margin-bottom: 15px;
+        &:hover{
+            -webkit-transform: scale(1.0);
+            transform: scale(1.0); 
+            transition-duration: 0.4s;
+        }
     }
     .somoshype_texto{
-
-        padding-top: 0px;
-        margin-left: 0px;
+        height: 200px;
+        margin: 20px;
+    }
+    .somoshype_texto2{
+        margin-top: 50px;
     }
      .somoshype_titulo{
          font-size: 1.6rem;

@@ -36,7 +36,7 @@
     transition: 0.3s all;
 }
 
-@media (min-width:0px) and (max-width: 768px) {
+@media (min-width:0px) and (max-width: 1400px) {
     .estiloProductos{
         @include flex-center;
         flex-direction: column;

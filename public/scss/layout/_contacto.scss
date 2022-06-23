@@ -9,7 +9,7 @@
     margin-top: 25px;
 }
 
-@media (min-width:0px) and (max-width: 460px) {
+@media (min-width:0px) and (max-width: 768px) {
 
     .formulario-imagen{
         display: grid;
@@ -21,7 +21,7 @@
         margin-right: 60px;
     }
     .imagenformu{
-        @include sizes(90%, 500px);
+        @include sizes(95%, 600px);
         border-radius: 10px;
         margin-left: 20px;
         margin-top: 25px;
