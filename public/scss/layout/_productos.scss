@@ -5,7 +5,7 @@
 }
 .imagenProductos{
     @include sizes(500px, 500px);
-    border-radius: 5PX;
+    border-radius: 10px;
     margin-left: 30px;
     border: $negro 1px solid;
 }

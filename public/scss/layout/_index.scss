@@ -3,7 +3,7 @@
     grid-template-columns: 50% 50%;
 }
 .imagenPrincipal1{
-    @include sizes(99%, 590px);
+    @include sizes(98%, 590px);
     margin-left: 5px;
     margin-right: 5px;
     image-resolution: 1080;
@@ -42,10 +42,10 @@
         height: max-content;
     }
     .imagenPrincipal1{
-        max-height: 450px;
-        max-width: 100%;
-        margin-left: 0px;
-        margin-right: 0px;
+        height: 450px;
+        width: 95%;
+        display: block; 
+        margin: auto;
     }
     .titulo1{
         @include flex-center;

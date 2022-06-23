@@ -63,7 +63,7 @@ header {
 
 .imagenPrincipal1 {
   height: 590px;
-  width: 99%;
+  width: 98%;
   margin-left: 5px;
   margin-right: 5px;
   image-resolution: 1080;
@@ -101,10 +101,10 @@ header {
     grid-template-columns: 100%;
     height: max-content; }
   .imagenPrincipal1 {
-    max-height: 450px;
-    max-width: 100%;
-    margin-left: 0px;
-    margin-right: 0px; }
+    height: 450px;
+    width: 95%;
+    display: block;
+    margin: auto; }
   .titulo1 {
     display: flex;
     justify-content: center;
@@ -284,9 +284,8 @@ header {
     height: 600px;
     width: 95%;
     border-radius: 10px;
-    margin-top: 25px;
-    margin-left: 10px;
-    margin-right: 10px; } }
+    display: block;
+    margin: auto; } }
 
 .estiloProductos {
   display: grid;
@@ -296,7 +295,7 @@ header {
 .imagenProductos {
   height: 500px;
   width: 500px;
-  border-radius: 5PX;
+  border-radius: 10px;
   margin-left: 30px;
   border: black 1px solid; }
 
