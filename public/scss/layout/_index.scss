@@ -44,6 +44,8 @@
     .imagenPrincipal1{
         max-height: 450px;
         max-width: 100%;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     .titulo1{
         @include flex-center;
